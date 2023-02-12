@@ -1,0 +1,67 @@
+.modal_Form{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.567);
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+   
+    place-content: center;
+    display: none;
+}
+.activeForm{
+display: grid;
+}
+
+.modalForm_form{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 4px;
+}
+
+.modal_title{
+    font-size: 30px;
+    margin: 10px 0;
+
+}
+.modal_formx{
+    position: absolute;
+    top: 10px ;
+    right: 10px;
+    cursor: pointer;
+    
+}
+
+.modal_formx:hover{
+    color: rgb(178,0,0);
+}
+
+.modal_form_label{
+    display: block;
+}
+.form_input{
+    width: 100%;
+    padding: 0;
+    outline: none;
+    font-family: var(--principal-font);
+}
+
+.modal_button{
+    background-color:var(--purple);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 200ms ease;
+}
+
+.modal_button:hover{
+    background-color: var(--medio-purple)
+}
