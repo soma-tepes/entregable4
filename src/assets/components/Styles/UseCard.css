@@ -117,13 +117,13 @@
 @media (max-width: 600px) {
     .card_dad {
         height: 90%;
-        width: 100%;
+        width: 210px;
 
     }
 
     .User_list_principal div:nth-child(1) {
         font-size: 16px;
-
+     text-align: center;
     }
 
     .card_button_edit {
