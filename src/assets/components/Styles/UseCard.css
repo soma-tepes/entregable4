@@ -1,93 +1,110 @@
-.User{
+.User {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
- border: 1px solid black;
+    border-top: 1px solid black;
+
 }
-.User_list{
-    width: 70%;
-    border: 1px solid red;
-  
+
+.User_list {
+    width: 90%;
     display: flex;
     justify-content: center;
     margin: 3%;
     gap: 100px;
     flex-wrap: wrap;
     padding: 3%;
- 
-}
-.card_dad{
- display: flex;
- flex-direction: column;
- justify-content: space-around;
-background-color: while;
-height: 100%;
-width: 100%;
-margin: 15px;
-padding: 3%;
-border: 1px solid gray;
 
 }
 
-.User_list_principal div:nth-child(1){
+.card_dad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: while;
+    height: 100%;
+    width: 255px;
+    margin: 15px;
+    padding: 2%;
+    border: 5px inset gray;
+
+}
+
+.User_list_principal div:nth-child(1) {
 
 
-font-size: 22px;
+    font-size: 22px;
 }
 
 
-.User_list_principal div:nth-child(2){
-    
+.User_list_principal div:nth-child(2) {
+
     /* background-color: aqua; */
     font-size: 1rem;
-    }
+}
 
 .card_button_delete {
-     background-color:  #D85D5D;
-     height: 50px;
-     width: 50px;
-     border: none;
-     border-radius: 10px;
+    background-color: #D85D5D;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
 }
-.card_button_delete:hover{
+
+.card_button_delete:hover {
     background-color: red;
     cursor: pointer;
     transition: 300ms ease;
 }
 
-.card_button_delete i {font-size: 20px; color: aliceblue;}
-.card_button_edit{
+.card_button_delete i {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.card_button_edit {
     height: 50px;
     width: 50px;
     border: none;
     border-radius: 10px;
     background-color: #989898;
 }
-.card_button_edit i {font-size: 20px; color: aliceblue;}
+
+.card_button_edit:hover{
+
+  background-color: #797979;
+  cursor: pointer;
+  transition: 300ms ease;
+
+}
+.card_button_edit i {
+    font-size: 20px;
+    color: aliceblue;
+}
 
 
 
-.flexb .card_ul{
-    font-size:16px ;
+.flexb .card_ul {
+    font-size: 16px;
     font-weight: 400;
 }
 
-.flexb .card_ul span{
+.flexb .card_ul span {
     display: block;
- 
+
     line-height: 45px;
     color: #797979;
 }
 
-.flexi{
+.flexi {
 
-   
+
     width: 100%;
     height: 100%;
 }
 
-.flexii{
+.flexii {
     width: 100%;
     height: 100%;
     display: flex;
@@ -99,26 +116,31 @@ font-size: 22px;
 
 @media (max-width: 600px) {
     .card_dad {
-     height: 80%;
-     width: 90%;
+        height: 90%;
+        width: 100%;
 
     }
-    .User_list_principal div:nth-child(1){
+
+    .User_list_principal div:nth-child(1) {
         font-size: 16px;
-        
-    }
-    .flexa{ 
-       text-align: center;
-       margin-top: 15%;
-    }
-    .flexi{
-       
-    
-    }
-   .flexii{
-    height: 10%;
-    width: 10%;
-    
 
-   }
-  }
+    }
+
+    .card_button_edit {
+        width: 20px;
+        height: 20px;
+    }
+    .card_button_edit i {
+        font-size: 9px;
+           
+    }
+    .card_button_delete {
+        width: 20px;
+        height: 20px;
+    }
+    .card_button_delete i {
+        font-size: 9px;
+           
+    }
+
+}
