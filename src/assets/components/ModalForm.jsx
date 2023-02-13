@@ -47,23 +47,23 @@ useEffect(()=>{
         <div className="modal_div">
        
           <label  className="modal_form_label" htmlFor="">Name</label>
-          <input className="form_input" type="text"  {...register("first_name")}/>
+          <input placeholder="name" className="form_input" type="text"  {...register("first_name")}/>
         </div>
         <div className="modal_div" >
           <label className="modal_form_label"  htmlFor="">Last Name</label>
-          <input className="form_input" type="text" {...register("last_name")} />
+          <input placeholder="last name" className="form_input" type="text" {...register("last_name")} />
         </div>
         <div className="modal_div">
-          <label className="modal_form_label" htmlFor="">email</label>
-          <input className="form_input" type="email"  {...register("email")}/>
+          <label className="modal_form_label" htmlFor="">Email</label>
+          <input placeholder="email"  className="form_input" type="email"  {...register("email")}/>
         </div>
         <div className="modal_div">
-          <label className="modal_form_label" htmlFor="">password</label>
-          <input className="form_input" type="password" {...register("password")} />
+          <label className="modal_form_label" htmlFor="">Password</label>
+          <input placeholder="password"  className="form_input" type="password" {...register("password")} />
         </div>
         <div className="modal_div">
-          <label className="modal_form_label" htmlFor="">datetime</label>
-          <input className="form_input" type="date" {...register("birthday")} />
+          <label className="modal_form_label" htmlFor="">Birthday</label>
+          <input   className="form_input" type="date" {...register("birthday")} />
         </div>
        <button type="submit" className="modal_button">{update?"Save Changes":"Add new User"}</button>
       </form>
