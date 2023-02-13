@@ -3,7 +3,8 @@ import UserCard from './UserCard'
 
 const UsersList = ({users,deleteUser,setUpdate,mostrarModal}) => {
   return (
-    <section>
+  <div className='User'>
+    <section className='User_list'>
      {
       users.map(user=> <UserCard key={user.id} user={user} 
         setUpdate={setUpdate} mostrarModal={mostrarModal}
@@ -11,6 +12,7 @@ const UsersList = ({users,deleteUser,setUpdate,mostrarModal}) => {
       )
      }
      </section>
+     </div>
   )
 }
 

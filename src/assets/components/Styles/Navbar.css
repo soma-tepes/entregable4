@@ -1,0 +1,42 @@
+
+.navbar{
+
+justify-content: space-between;
+align-items: center;
+padding: 15px;
+border: 1px solid black;
+display: grid;
+place-content: center;
+
+}
+
+.nav_title{
+  font-size: 24px;
+  text-align: center;
+ 
+}
+
+.nav_button{
+  
+ background-color: #555A88;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+}
+
+.nav_button:hover{
+    background-color: purple;
+    color:white;
+    transition: 300ms ease;
+    cursor: pointer;
+
+}
+
+@media (min-width: 400px) {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  }

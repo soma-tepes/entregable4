@@ -61,14 +61,17 @@ const deleteUser = (id)=>{
 
   return (
     <div className="App">
-     hello 
+  
      <Navbar  mostrarModal={mostrarModal}/>
+     
      <ModalForm modal={modal} mostrarModal={mostrarModal}
      createUser={createUser} update={update} updateUserAxios={updateUserAxios}
      setUpdate={setUpdate}
      />
-     <UsersList users={users} deleteUser={deleteUser}
+     
+     <UsersList className="Userlist" users={users} deleteUser={deleteUser}
      setUpdate={setUpdate} mostrarModal={mostrarModal}
+    
      />
 
     </div>

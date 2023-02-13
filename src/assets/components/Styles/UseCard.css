@@ -1,0 +1,124 @@
+.User{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ border: 1px solid black;
+}
+.User_list{
+    width: 70%;
+    border: 1px solid red;
+  
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 3%;
+ 
+}
+.card_dad{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+background-color: while;
+height: 100%;
+width: 100%;
+margin: 15px;
+padding: 3%;
+border: 1px solid gray;
+
+}
+
+.User_list_principal div:nth-child(1){
+
+
+font-size: 22px;
+}
+
+
+.User_list_principal div:nth-child(2){
+    
+    /* background-color: aqua; */
+    font-size: 1rem;
+    }
+
+.card_button_delete {
+     background-color:  #D85D5D;
+     height: 50px;
+     width: 50px;
+     border: none;
+     border-radius: 10px;
+}
+.card_button_delete:hover{
+    background-color: red;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.card_button_delete i {font-size: 20px; color: aliceblue;}
+.card_button_edit{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #989898;
+}
+.card_button_edit i {font-size: 20px; color: aliceblue;}
+
+
+
+.flexb .card_ul{
+    font-size:16px ;
+    font-weight: 400;
+}
+
+.flexb .card_ul span{
+    display: block;
+ 
+    line-height: 45px;
+    color: #797979;
+}
+
+.flexi{
+
+   
+    width: 100%;
+    height: 100%;
+}
+
+.flexii{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-right: 5%;
+}
+
+@media (max-width: 600px) {
+    .card_dad {
+     height: 80%;
+     width: 90%;
+
+    }
+    .User_list_principal div:nth-child(1){
+        font-size: 16px;
+        
+    }
+    .flexa{ 
+       text-align: center;
+       margin-top: 15%;
+    }
+    .flexi{
+       
+    
+    }
+   .flexii{
+    height: 10%;
+    width: 10%;
+    
+
+   }
+  }

@@ -1,12 +1,14 @@
 import React from 'react'
-
+import './Styles/Navbar.css'
 const Navbar = ({mostrarModal}) => {
 
   return (
-   <nav>
-    <h1>Usuarios Crud</h1>
-    <button onClick={mostrarModal}><i className='bx bx-cross'></i>Create new User</button>
+    
+   <nav className='navbar'>
+    <h1 className='nav_title'>USERS</h1>
+    <button className='nav_button' onClick={mostrarModal}><i className='bx bx-cross'></i>Create New User</button>
    </nav>
+   
   )
 }
 
