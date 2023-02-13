@@ -27,7 +27,7 @@ const edit =()=>{
       <div className='flexii'>
    
       <button  onClick={()=>deleteUser(user.id)} className='card_button_delete'><i className="bx bx-trash bdelete"></i></button>
-      <button className='card_button_edit'><i onClick={edit} className="bx bx-pencil pedit"></i></button>
+      <button onClick={edit} className='card_button_edit'><i  className="bx bx-pencil pedit"></i></button>
  
     </div>
     </div>
